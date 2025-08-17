@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+}
+
+h1, h2, h3{
+    color: #333;
+}
+
+p{
+    color: rgb(0, 0, 0);
+}
+
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: #484848;
+    padding: 0 2rem;
+}
+
+nav{
+    position: relative;
+}
+
+.logo{
+    width: 50px;
+    margin-top: 15px;
+    border-radius: 25%;
+}
+
+.navbar-item{
+    position: absolute;
+    right: 0;
+    height: 80px;
+    line-height: 80px;
+    margin: 0;
+    display: inline-block;
+}
+.navbar-item li{
+    display: inline-block;
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+.navbar-item a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.navbar-item a:hover{
+    color: #787878;
+    cursor: pointer;
+}
+
+.default-btn{
+    padding: 15px 20px;
+    background-color: rgb(45, 241, 58);
+    border-radius: 5px;
+}
+
+.navbar-item .default-btn:hover{
+    background-color: #22bb5f;
+    color: #fff;
+}
+
+.main-bainner{
+    background-image: url("../Projeto_3/imagens/mainbanner.png");
+    background-size: cover;
+    background-position: center;
+    padding: 10rem 0;
+}
+.main-bainner h1,
+.main-bainner p{
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: #000 3px 2px 3cap;
+}
+
+.main-bainner h1{
+    font-size: 54px;
+}
+
+.main-bainner p{
+    font-size: 32px;
+}
+
+.services_container{
+    padding: 5rem 0;
+}
+
+.services_container ul{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.services_container li{
+    flex: 1 1 200px;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+}
+
+.fas{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.fa-shield-alt{
+    color: #22bb5f;
+}
+
+.fa-rocket{
+    color: red;
+}
+
+.fa-comments{
+    color: yellow;
+}
+
+.services_container h3{
+    margin-bottom: 25px;
+}
+
+.services_container p{
+    line-height: 24px;
+}
+
+.price-container{
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+.price-container h2{
+    font-size: 36px;
+}
+
+.price-container p{
+    font-size: 20px;
+}
+
+.plams-container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto 0;
+}
+
+.paln{
+    flex: 1;
+    max-width: 275px;
+    margin: 0 20px;
+}
+
+.paln ul{
+    padding: 0;
+}
+
+.paln li{
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    background-color: darkgray;
+    color: #fff;
+}
+/**Colocar um elemento por cima de um outro elemento*/
+
+.paln .price{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #22bb5f;
+    color: white;
+    text-align: center;
+    line-height: 120px;
+    margin: 0 auto -50px;
+    font-size: 18px;
+    position: relative;
+}
+
+.paln .plan-name{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #484848;
+    padding: 50px 0;
+}
+/**Colocar um elemento por cima de um outro elemento*/
+
+.paln .plan-btn{
+    background-color: #22bb5f;
+    color: #fff;
+    font-size: 24px;
+    height: 75px;
+    line-height: 75px;
+    cursor: pointer;
+}
+
+.paln .recommend{
+    background-color: #f45c57;
+}
+
+.source-container{
+    background-color: #34454e;
+    text-align: center;
+    padding: 5rem 0;
+}
+.source-container h2{
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.source-container p{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.source-container input{
+    display: block;
+    border: none;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.source-container input[type="text"]{
+    width: 60%;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.source-container input[type="submit"]{
+    background-color: #22bb5f;
+    padding: 15px 30px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    opacity: .8;
+}
+
+.source-container input[type="submit"]:hover{
+    opacity: .1;
+    transition: 0.3s;
+    color: white;
+}
+
+.contacto-container{
+    text-align: center;
+    padding: 5rem 0 2rem 0;
+}
+
+.contacto-container h2{
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contacto-container p{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.contacto-container input, .contacto-container textarea{
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 10px 20px;
+}
+
+.contacto-container textarea{
+    display: block;
+    margin: 0 auto 20px;
+    width: 470px;
+    height: 150px;
+}
+
+.contacto-container input[type ="submit"]{
+    display: block;
+    margin: 0 auto;
+    background-color: #00ff66;
+    color: white;
+}
+
+.contacto-container input[type ="submit"]:hover{
+     background-color: #22bb5f;
+     color: #fff;
+     cursor: pointer;
+     transition: .2s;
+}
+
+footer{
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0 100px;
+}
+
+/**RESPONSIVIDADES/
+
+/*Small Laptops*/
+@media (max-width: 1100px){
+    .plams-container{
+        width: 95%;
+    }
+    .paln{
+        margin: 0 5px;
+    }
+}
+
+/*Tablet*/
+@media (max-width: 900px){
+ .main-bainner p{
+    padding: 0 6rem;
+ }
+
+.services_container ul{
+    flex-direction: column;
+}
+ .source-container{
+    padding: 2rem 4rem;
+ }
+}
+
+/*CELULAR*/
+@media (max-width: 576px){
+    html,body{
+        overflow-x: hidden;
+    }
+    .navbar-item li{
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .plams-container{
+        flex-direction: column;
+        width: 100%;
+        padding: 0 2rem;
+        margin-bottom: 15px;
+    }
+    .paln{
+        width: 100%;
+        max-width: 100%;
+        margin: 8px;
+    }
+
+    .source-container h2{
+        font-size: 28px;
+    }
+    
+    .source-container input[type="text"]{
+        width: 100%;
+    }
+
+    .contacto-container{
+        padding: 3rem 2rem;
+    }
+
+    .contacto-container input, .contacto-container textarea{
+        width: 100%;
+        margin: 10px 0;
+    }
+}
